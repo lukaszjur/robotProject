@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 17:31:38.554" rpa="false" schemaversion="3">
+<suite id="s1" name="robotProject" source="C:\Users\ljurkowski001\PycharmProjects\robotProject">
+<suite id="s1-s1" name="Tests" source="C:\Users\ljurkowski001\PycharmProjects\robotProject\tests.robot">
+<test id="s1-s1-t1" name="Google search" line="6">
+<kw name="Open Google Webpage">
+<msg timestamp="20221214 17:31:38.648" level="FAIL">No keyword with name 'Open Google Webpage' found.</msg>
+<status status="FAIL" starttime="20221214 17:31:38.648" endtime="20221214 17:31:38.648"/>
+</kw>
+<tag>search-keyword</tag>
+<status status="FAIL" starttime="20221214 17:31:38.646" endtime="20221214 17:31:38.649">No keyword with name 'Open Google Webpage' found.</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20221214 17:31:38.616" endtime="20221214 17:31:38.650"/>
+</suite>
+<status status="FAIL" starttime="20221214 17:31:38.559" endtime="20221214 17:31:38.652"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">search-keyword</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="robotProject">robotProject</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">robotProject.Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221214 17:31:38.645" level="ERROR">Error in file 'C:\Users\ljurkowski001\PycharmProjects\robotProject\tests.robot' on line 3: Invalid resource file extension '.resources'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
+</errors>
+</robot>

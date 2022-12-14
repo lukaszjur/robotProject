@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Suite description
-Resource         ../resource_settings.robot
+Resource         resources/Generics.resources
 
 *** Test Cases ***
 Google search
