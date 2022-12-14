@@ -6,4 +6,5 @@ Library             String
 #                                Keywords                                  #
 ############################################################################
 
-Resource            resources/Generics.resource
+Resource            resources/Generics.resources
+Resource            resources/TestData/Generics_TestData.resources
