@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 17:31:38.554" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 17:38:47.067" rpa="false" schemaversion="3">
 <suite id="s1" name="robotProject" source="C:\Users\ljurkowski001\PycharmProjects\robotProject">
 <suite id="s1-s1" name="Tests" source="C:\Users\ljurkowski001\PycharmProjects\robotProject\tests.robot">
 <test id="s1-s1-t1" name="Google search" line="6">
-<kw name="Open Google Webpage">
-<msg timestamp="20221214 17:31:38.648" level="FAIL">No keyword with name 'Open Google Webpage' found.</msg>
-<status status="FAIL" starttime="20221214 17:31:38.648" endtime="20221214 17:31:38.648"/>
+<kw name="Open Google Webpage" library="Generics">
+<kw name="Open Browser">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<msg timestamp="20221214 17:38:47.123" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20221214 17:38:47.122" endtime="20221214 17:38:47.123"/>
+</kw>
+<status status="FAIL" starttime="20221214 17:38:47.122" endtime="20221214 17:38:47.123"/>
 </kw>
 <tag>search-keyword</tag>
-<status status="FAIL" starttime="20221214 17:31:38.646" endtime="20221214 17:31:38.649">No keyword with name 'Open Google Webpage' found.</status>
+<status status="FAIL" starttime="20221214 17:38:47.121" endtime="20221214 17:38:47.124">No keyword with name 'Open Browser' found.</status>
 </test>
 <doc>Suite description</doc>
-<status status="FAIL" starttime="20221214 17:31:38.616" endtime="20221214 17:31:38.650"/>
+<status status="FAIL" starttime="20221214 17:38:47.104" endtime="20221214 17:38:47.126"/>
 </suite>
-<status status="FAIL" starttime="20221214 17:31:38.559" endtime="20221214 17:31:38.652"/>
+<status status="FAIL" starttime="20221214 17:38:47.071" endtime="20221214 17:38:47.127"/>
 </suite>
 <statistics>
 <total>
@@ -28,6 +33,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221214 17:31:38.645" level="ERROR">Error in file 'C:\Users\ljurkowski001\PycharmProjects\robotProject\tests.robot' on line 3: Invalid resource file extension '.resources'. Supported extensions are '.resource', '.robot', '.txt', '.tsv', '.rst' and '.rest'.</msg>
 </errors>
 </robot>

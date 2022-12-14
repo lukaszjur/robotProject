@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Suite description
-Resource         resources/Generics.resources
+Resource         resources/Generics.resource
 
 *** Test Cases ***
 Google search
