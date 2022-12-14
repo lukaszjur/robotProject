@@ -1,86 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 18:12:54.716" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 19:07:33.018" rpa="false" schemaversion="3">
 <suite id="s1" name="robotProject" source="C:\Users\ljurkowski001\PycharmProjects\robotProject">
 <suite id="s1-s1" name="Tests" source="C:\Users\ljurkowski001\PycharmProjects\robotProject\tests.robot">
 <test id="s1-s1-t1" name="Google search" line="8">
 <kw name="Open Google Webpage" library="Generics">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
-<arg>${Browser}</arg>
+<arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221214 18:12:55.259" level="INFO">Opening browser 'Chrome' to base url 'www.google.com'.</msg>
-<msg timestamp="20221214 18:12:57.499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221214 18:12:57.500" level="FAIL">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=108.0.5359.94)
+<msg timestamp="20221214 19:07:33.584" level="INFO">Opening browser 'Chrome' to base url 'www.google.com'.</msg>
+<msg timestamp="20221214 19:07:35.341" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221214 19:07:35.341" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=108.0.5359.100)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00EFF243]
-	(No symbol) [0x00E87FD1]
-	(No symbol) [0x00D7CF10]
-	(No symbol) [0x00D700EE]
-	(No symbol) [0x00D6EA07]
-	(No symbol) [0x00D6EDC2]
-	(No symbol) [0x00D7EA5B]
-	(No symbol) [0x00DDD187]
-	(No symbol) [0x00DC858C]
-	(No symbol) [0x00DDC9EB]
-	(No symbol) [0x00DC8386]
-	(No symbol) [0x00DA163C]
-	(No symbol) [0x00DA269D]
-	GetHandleVerifier [0x01199A22+2655074]
-	GetHandleVerifier [0x0118CA24+2601828]
-	GetHandleVerifier [0x00FA8C0A+619850]
-	GetHandleVerifier [0x00FA7830+614768]
-	(No symbol) [0x00E905FC]
-	(No symbol) [0x00E95968]
-	(No symbol) [0x00E95A55]
-	(No symbol) [0x00EA051B]
+	(No symbol) [0x00A0F243]
+	(No symbol) [0x00997FD1]
+	(No symbol) [0x0088CF10]
+	(No symbol) [0x008800EE]
+	(No symbol) [0x0087EA07]
+	(No symbol) [0x0087EDC2]
+	(No symbol) [0x0088EA5B]
+	(No symbol) [0x008ED187]
+	(No symbol) [0x008D858C]
+	(No symbol) [0x008EC9EB]
+	(No symbol) [0x008D8386]
+	(No symbol) [0x008B163C]
+	(No symbol) [0x008B269D]
+	GetHandleVerifier [0x00CA9A22+2655074]
+	GetHandleVerifier [0x00C9CA24+2601828]
+	GetHandleVerifier [0x00AB8C0A+619850]
+	GetHandleVerifier [0x00AB7830+614768]
+	(No symbol) [0x009A05FC]
+	(No symbol) [0x009A5968]
+	(No symbol) [0x009A5A55]
+	(No symbol) [0x009B051B]
 	BaseThreadInitThunk [0x75C8FEF9+25]
 	RtlGetAppContainerNamedObjectPath [0x77287BBE+286]
 	RtlGetAppContainerNamedObjectPath [0x77287B8E+238]
 </msg>
-<status status="FAIL" starttime="20221214 18:12:55.258" endtime="20221214 18:12:57.509"/>
+<status status="FAIL" starttime="20221214 19:07:33.583" endtime="20221214 19:07:35.349"/>
 </kw>
-<status status="FAIL" starttime="20221214 18:12:55.258" endtime="20221214 18:12:57.510"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://www.google.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20221214 19:07:35.350" endtime="20221214 19:07:35.350"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>1920</arg>
+<arg>1080</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="NOT RUN" starttime="20221214 19:07:35.350" endtime="20221214 19:07:35.350"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.3</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20221214 19:07:35.350" endtime="20221214 19:07:35.350"/>
+</kw>
+<status status="FAIL" starttime="20221214 19:07:33.583" endtime="20221214 19:07:35.350"/>
 </kw>
 <kw name="Insert Search Text" library="Generics">
-<status status="NOT RUN" starttime="20221214 18:12:57.511" endtime="20221214 18:12:57.511"/>
+<status status="NOT RUN" starttime="20221214 19:07:35.351" endtime="20221214 19:07:35.351"/>
 </kw>
 <tag>google</tag>
-<status status="FAIL" starttime="20221214 18:12:55.258" endtime="20221214 18:12:57.513">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=108.0.5359.94)
+<status status="FAIL" starttime="20221214 19:07:33.583" endtime="20221214 19:07:35.351">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=108.0.5359.100)
 Stacktrace:
 Backtrace:
-	(No symbol) [0x00EFF243]
-	(No symbol) [0x00E87FD1]
-	(No symbol) [0x00D7CF10]
-	(No symbol) [0x00D700EE]
-	(No symbol) [0x00D6EA07]
-	(No symbol) [0x00D6EDC2]
-	(No symbol) [0x00D7EA5B]
-	(No symbol) [0x00DDD187]
-	(No symbol) [0x00DC858C]
-	(No symbol) [0x00DDC9EB]
-	(No symbol) [0x00DC8386]
-	(No symbol) [0x00DA163C]
-	(No symbol) [0x00DA269D]
-	GetHandleVerifier [0x01199A22+2655074]
-	GetHandleVerifier [0x0118CA24+2601828]
-	GetHandleVerifier [0x00FA8C0A+619850]
-	GetHandleVerifier [0x00FA7830+614768]
-	(No symbol) [0x00E905FC]
-	(No symbol) [0x00E95968]
-	(No symbol) [0x00E95A55]
-	(No symbol) [0x00EA051B]
+	(No symbol) [0x00A0F243]
+	(No symbol) [0x00997FD1]
+	(No symbol) [0x0088CF10]
+	(No symbol) [0x008800EE]
+	(No symbol) [0x0087EA07]
+	(No symbol) [0x0087EDC2]
+	(No symbol) [0x0088EA5B]
+	(No symbol) [0x008ED187]
+	(No symbol) [0x008D858C]
+	(No symbol) [0x008EC9EB]
+	(No symbol) [0x008D8386]
+	(No symbol) [0x008B163C]
+	(No symbol) [0x008B269D]
+	GetHandleVerifier [0x00CA9A22+2655074]
+	GetHandleVerifier [0x00C9CA24+2601828]
+	GetHandleVerifier [0x00AB8C0A+619850]
+	GetHandleVerifier [0x00AB7830+614768]
+	(No symbol) [0x009A05FC]
+	(No symbol) [0x009A5968]
+	(No symbol) [0x009A5A55]
+	(No symbol) [0x009B051B]
 	BaseThreadInitThunk [0x75C8FEF9+25]
 	RtlGetAppContainerNamedObjectPath [0x77287BBE+286]
 	RtlGetAppContainerNamedObjectPath [0x77287B8E+238]
 </status>
 </test>
 <doc>Suite description</doc>
-<status status="FAIL" starttime="20221214 18:12:54.757" endtime="20221214 18:12:57.516"/>
+<status status="FAIL" starttime="20221214 19:07:33.056" endtime="20221214 19:07:35.353"/>
 </suite>
-<status status="FAIL" starttime="20221214 18:12:54.720" endtime="20221214 18:12:57.518"/>
+<status status="FAIL" starttime="20221214 19:07:33.024" endtime="20221214 19:07:35.354"/>
 </suite>
 <statistics>
 <total>
@@ -95,6 +111,5 @@ Backtrace:
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221214 18:12:55.254" level="WARN">Imported resource file 'C:\Users\ljurkowski001\PycharmProjects\robotProject\resources\TestData\Generics_TestData.resource' is empty.</msg>
 </errors>
 </robot>
