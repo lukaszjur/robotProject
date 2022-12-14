@@ -10,12 +10,5 @@ Library    String
 ############################################################################
 
 Resource            resources/Generics.resource
-#Resource            resources/TestData/Generics_TestData.resource
+Resource            resources/TestData/Generics_TestData.resource
 
-############################################################################
-#                                Variables                                 #
-############################################################################
-
-*** Variables ***
-${URL}    www.google.com
-${BROWSER}    Chrome

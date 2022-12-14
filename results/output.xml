@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 19:07:33.018" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 19:26:01.987" rpa="false" schemaversion="3">
 <suite id="s1" name="robotProject" source="C:\Users\ljurkowski001\PycharmProjects\robotProject">
 <suite id="s1-s1" name="Tests" source="C:\Users\ljurkowski001\PycharmProjects\robotProject\tests.robot">
 <test id="s1-s1-t1" name="Google search" line="8">
@@ -8,9 +8,9 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221214 19:07:33.584" level="INFO">Opening browser 'Chrome' to base url 'www.google.com'.</msg>
-<msg timestamp="20221214 19:07:35.341" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221214 19:07:35.341" level="FAIL">InvalidArgumentException: Message: invalid argument
+<msg timestamp="20221214 19:26:02.516" level="INFO">Opening browser 'Chrome' to base url 'www.google.com'.</msg>
+<msg timestamp="20221214 19:26:07.067" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221214 19:26:07.068" level="FAIL">InvalidArgumentException: Message: invalid argument
   (Session info: chrome=108.0.5359.100)
 Stacktrace:
 Backtrace:
@@ -39,31 +39,26 @@ Backtrace:
 	RtlGetAppContainerNamedObjectPath [0x77287BBE+286]
 	RtlGetAppContainerNamedObjectPath [0x77287B8E+238]
 </msg>
-<status status="FAIL" starttime="20221214 19:07:33.583" endtime="20221214 19:07:35.349"/>
-</kw>
-<kw name="Go To" library="SeleniumLibrary">
-<arg>http://www.google.com</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="NOT RUN" starttime="20221214 19:07:35.350" endtime="20221214 19:07:35.350"/>
+<status status="FAIL" starttime="20221214 19:26:02.516" endtime="20221214 19:26:07.098"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1920</arg>
 <arg>1080</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="NOT RUN" starttime="20221214 19:07:35.350" endtime="20221214 19:07:35.350"/>
+<status status="NOT RUN" starttime="20221214 19:26:07.098" endtime="20221214 19:26:07.098"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>0.3</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="NOT RUN" starttime="20221214 19:07:35.350" endtime="20221214 19:07:35.350"/>
+<status status="NOT RUN" starttime="20221214 19:26:07.098" endtime="20221214 19:26:07.098"/>
 </kw>
-<status status="FAIL" starttime="20221214 19:07:33.583" endtime="20221214 19:07:35.350"/>
+<status status="FAIL" starttime="20221214 19:26:02.515" endtime="20221214 19:26:07.098"/>
 </kw>
 <kw name="Insert Search Text" library="Generics">
-<status status="NOT RUN" starttime="20221214 19:07:35.351" endtime="20221214 19:07:35.351"/>
+<status status="NOT RUN" starttime="20221214 19:26:07.099" endtime="20221214 19:26:07.099"/>
 </kw>
 <tag>google</tag>
-<status status="FAIL" starttime="20221214 19:07:33.583" endtime="20221214 19:07:35.351">InvalidArgumentException: Message: invalid argument
+<status status="FAIL" starttime="20221214 19:26:02.515" endtime="20221214 19:26:07.099">InvalidArgumentException: Message: invalid argument
   (Session info: chrome=108.0.5359.100)
 Stacktrace:
 Backtrace:
@@ -94,9 +89,9 @@ Backtrace:
 </status>
 </test>
 <doc>Suite description</doc>
-<status status="FAIL" starttime="20221214 19:07:33.056" endtime="20221214 19:07:35.353"/>
+<status status="FAIL" starttime="20221214 19:26:02.024" endtime="20221214 19:26:07.103"/>
 </suite>
-<status status="FAIL" starttime="20221214 19:07:33.024" endtime="20221214 19:07:35.354"/>
+<status status="FAIL" starttime="20221214 19:26:01.992" endtime="20221214 19:26:07.105"/>
 </suite>
 <statistics>
 <total>
