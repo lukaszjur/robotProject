@@ -1,9 +1,12 @@
 *** Settings ***
 Documentation    Suite description
-Resource         resources/Generics.resource
+Resource         resource_settings.robot
+
+
 
 *** Test Cases ***
 Google search
     [Tags]  google
     Open Google Webpage
     Insert Search Text
+
