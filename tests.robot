@@ -4,5 +4,5 @@ Resource         resources/Generics.resource
 
 *** Test Cases ***
 Google search
-    [Tags]  google
+    [Tags]  google1
     Open Google Webpage
