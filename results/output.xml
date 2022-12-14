@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 17:42:11.450" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.11.0 on win32)" generated="20221214 17:47:36.129" rpa="false" schemaversion="3">
 <suite id="s1" name="robotProject" source="C:\Users\ljurkowski001\PycharmProjects\robotProject">
 <suite id="s1-s1" name="Tests" source="C:\Users\ljurkowski001\PycharmProjects\robotProject\tests.robot">
 <test id="s1-s1-t1" name="Google search" line="6">
@@ -7,18 +7,18 @@
 <kw name="Open Browser">
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
-<msg timestamp="20221214 17:42:11.502" level="FAIL">No keyword with name 'Open Browser' found.</msg>
-<status status="FAIL" starttime="20221214 17:42:11.502" endtime="20221214 17:42:11.502"/>
+<msg timestamp="20221214 17:47:36.182" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20221214 17:47:36.181" endtime="20221214 17:47:36.182"/>
 </kw>
-<status status="FAIL" starttime="20221214 17:42:11.501" endtime="20221214 17:42:11.502"/>
+<status status="FAIL" starttime="20221214 17:47:36.181" endtime="20221214 17:47:36.182"/>
 </kw>
 <tag>google</tag>
-<status status="FAIL" starttime="20221214 17:42:11.500" endtime="20221214 17:42:11.503">No keyword with name 'Open Browser' found.</status>
+<status status="FAIL" starttime="20221214 17:47:36.180" endtime="20221214 17:47:36.183">No keyword with name 'Open Browser' found.</status>
 </test>
 <doc>Suite description</doc>
-<status status="FAIL" starttime="20221214 17:42:11.488" endtime="20221214 17:42:11.504"/>
+<status status="FAIL" starttime="20221214 17:47:36.170" endtime="20221214 17:47:36.184"/>
 </suite>
-<status status="FAIL" starttime="20221214 17:42:11.454" endtime="20221214 17:42:11.506"/>
+<status status="FAIL" starttime="20221214 17:47:36.133" endtime="20221214 17:47:36.185"/>
 </suite>
 <statistics>
 <total>

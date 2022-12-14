@@ -4,5 +4,6 @@ Resource         resources/Generics.resource
 
 *** Test Cases ***
 Google search
-    [Tags]  google1
+    [Tags]  google
     Open Google Webpage
+    Insert Search Text
