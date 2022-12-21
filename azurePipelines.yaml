@@ -1,0 +1,61 @@
+```# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+trigger:
+- main
+
+pool:
+  vmImage: windows-latest
+strategy:
+  matrix:
+    Python39:
+      python.version: '3.9'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: pip install -r requirements.txt && npm install chromedriver
+  displayName: 'Install dependencies'
+
+- powershell: |
+   Write-Host "Robot Framework tests"
+   robot --pythonpath . -d Results -x outputxunit.xml -v SALESFORCE_USER:%USER% -v SALESFORCE_PASSWORD:%PASSWORD% -v SALESFORCE_TOKEN:%TOKEN% -i SmokeTests .
+
+  failOnStderr: true
+  displayName: 'Run Robot Framework Tests'
+  continueOnError: true
+  env:
+    MY_PASSWORD: $(PASSWORD)
+
+
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results'
+  continueOnError: true
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'outputxunit.xml'
+    testRunTitle: 'OmniChannel Tests'
+    searchFolder: 'D:\a\1\s\Results'
+    publishRunAttachments: true
+  condition: succeededOrFailed()
+
+#Copy test result files from agent machine to artifact staging directory
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: 'D:\a\1\s\Results'
+    targetFolder: $(Build.ArtifactStagingDirectory)
+  condition: succeededOrFailed()
+  displayName: Copy test result files to artifact staging directory
+
+#Publish test results to BuildOutputs build artifact 
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: BuildOutputs
+  condition: succeededOrFailed()
+  displayName: Publish build artifacts```
